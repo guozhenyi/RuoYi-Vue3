@@ -108,7 +108,6 @@ import { makeUpHtml, vueTemplate, vueScript, cssStyle } from '@/utils/generator/
 import { makeUpJs } from '@/utils/generator/js'
 import { makeUpCss } from '@/utils/generator/css'
 import Download from '@/plugins/download'
-import { ElNotification } from 'element-plus'
 import DraggableItem from './DraggableItem.vue'
 import RightPanel from './RightPanel.vue'
 import CodeTypeDialog from './CodeTypeDialog.vue'

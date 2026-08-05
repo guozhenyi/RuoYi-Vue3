@@ -259,7 +259,7 @@ async function toggleTheme(event?: MouseEvent): Promise<void> {
 
         svg {
           transition: transform 0.3s;
-          
+
           &:hover {
             transform: scale(1.15);
           }

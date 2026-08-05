@@ -1,11 +1,7 @@
 import { createApp } from 'vue'
 
-import Cookies from 'js-cookie'
-
-import ElementPlus from 'element-plus'
-import 'element-plus/dist/index.css'
+// element-plus 组件与样式由 unplugin 按需自动加载，此处仅引入暗黑主题变量
 import 'element-plus/theme-chalk/dark/css-vars.css'
-import locale from 'element-plus/es/locale/lang/zh-cn'
 
 import '@/assets/styles/index.scss' // global css
 
@@ -73,13 +69,5 @@ app.use(elementIcons)
 app.component('svg-icon', SvgIcon)
 
 directive(app)
-
-// 使用element-plus 并且设置全局的大小
-// @ts-ignore
-app.use(ElementPlus, {
-  locale: locale,
-  // 支持 large、default、small
-  size: Cookies.get('size') || 'default'
-})
 
 app.mount('#app')

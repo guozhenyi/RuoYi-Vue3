@@ -1,5 +1,3 @@
-import { ElMessage, ElMessageBox, ElNotification, ElLoading } from 'element-plus'
-
 let loadingInstance: ReturnType<typeof ElLoading.service>
 
 export default {
