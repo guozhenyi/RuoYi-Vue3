@@ -163,8 +163,8 @@ getCode()
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-image: url("../assets/images/login-background.jpg");
-  background-size: cover;
+  background-color: #333333;
+  // background-size: cover;
 }
 .title {
   margin: 0px auto 30px auto;

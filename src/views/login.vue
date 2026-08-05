@@ -40,7 +40,7 @@
           <img :src="codeUrl" @click="getCode" class="login-code-img"/>
         </div>
       </el-form-item>
-      <el-checkbox v-model="loginForm.rememberMe" style="margin:0px 0px 25px 0px;">记住密码</el-checkbox>
+      <!-- <el-checkbox v-model="loginForm.rememberMe" style="margin:0px 0px 25px 0px;">记住密码</el-checkbox> -->
       <el-form-item style="width:100%;">
         <el-button
           :loading="loading"
@@ -58,9 +58,9 @@
       </el-form-item>
     </el-form>
     <!--  底部  -->
-    <div class="el-login-footer">
+    <!-- <div class="el-login-footer">
       <span>{{ footerContent }}</span>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -164,29 +164,35 @@ function getCookie(): void {
 }
 
 getCode()
-getCookie()
+// getCookie()
 </script>
 
 <style lang='scss' scoped>
 .login {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-image: url("../assets/images/login-background.jpg");
-  background-size: cover;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  background: #3c414f;
+  overflow: hidden;
 }
 .title {
   margin: 0px auto 30px auto;
   text-align: center;
   color: #707070;
+  letter-spacing: 3px;
+  text-shadow: 0 0 12px rgba(56, 225, 255, 0.45);
 }
 
 .login-form {
   border-radius: 6px;
   background: #ffffff;
-  width: 400px;
-  padding: 25px 25px 5px 25px;
+  width: 420px;
+  padding: 25px 35px 8px 35px;
   z-index: 1;
   .el-input {
     height: 40px;
