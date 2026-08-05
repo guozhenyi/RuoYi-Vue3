@@ -2,7 +2,7 @@ import axios from 'axios'
 import { saveAs } from 'file-saver'
 import { getToken } from '@/utils/auth'
 import errorCode from '@/utils/errorCode'
-import { blobValidate } from '@/utils/ruoyi'
+import { blobValidate } from '@/utils/common'
 
 const baseURL = import.meta.env.VITE_APP_BASE_API
 let downloadLoadingInstance: ReturnType<typeof ElLoading.service>
